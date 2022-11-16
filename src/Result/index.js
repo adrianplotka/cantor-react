@@ -1,9 +1,9 @@
 import "./style.css";
 
 const Result = () => (
-    <div class="result">
+    <div className="result">
                     <p>Wynik w PLN
-                        <strong class="js-result">0.00</strong>
+                        <strong>0.00</strong>
                     </p>
                 </div>
 )

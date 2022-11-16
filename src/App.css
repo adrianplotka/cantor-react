@@ -9,9 +9,8 @@ html {
 body {
   display: flex;
   align-items: center;
+  min-height: 100vh;
   justify-content: center;
-  min-height: 100px;
-  /* background-image: url("../images/background.png"); */
-  background-size: cover;
-  background-position: center;
+  background:url("./background.jpg");
+  background-position: center center;
 }
