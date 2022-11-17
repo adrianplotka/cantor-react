@@ -22,3 +22,9 @@
 .form__button:active {
     background-color: hsl(208, 100%, 87%);
 }
+
+@media(max-width:767px) {
+    .form {
+        max-width: 300px;
+    }
+}
