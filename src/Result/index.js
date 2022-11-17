@@ -1,10 +1,10 @@
 import "./style.css";
 
-const Result = () => (
+const Result = ({ result, amoundExchange}) => (
     <div className="result">
-                    <p>Wynik w PLN
-                        <strong>0.00</strong>
-                    </p>
+                        <strong>
+                            {result}
+                        </strong>
                 </div>
 )
 
