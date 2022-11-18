@@ -3,10 +3,9 @@
 This page has a simple task organizer. Here you can add the task you want to add and then mark that we have done it. It also allows you to remove a task that is not interesting for you
 
 ### Demo
-[Project]https://adrianplotka.github.io/cantor-react/
+[Project](https://adrianplotka.github.io/cantor-react/)
 
-<img src=public/readme.png alt= "Layout" max-width="800px">
-#
+<img src=public/readme.png alt= "Layout" max-width="300px">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
