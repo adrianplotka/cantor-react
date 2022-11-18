@@ -27,16 +27,16 @@ const Form = ({ calculateResult, setResult }) => {
                 <select className="form__field"
                     name="currencyConverted"
                     value={currency}
-                    onChange={({ target}) => setCurrency(target.value)}
+                    onChange={({ target }) => setCurrency(target.value)}
                 >
                     {currencies.map(currency => (
-                        <option 
-                        key={currency.short}
-                        value={currency.short}
+                        <option
+                            key={currency.short}
+                            value={currency.short}
                         >
                             {currency.name}
                         </option>
-                    ))}
+                    ))};
                 </select>
             </label>
             <label className="form__field ">
@@ -56,8 +56,7 @@ const Form = ({ calculateResult, setResult }) => {
                 <button className="form__button" type="reset" >Resetuj</button>
             </div>
         </form>
-    )
+    );
+};
 
-}
- 
 export default Form; 

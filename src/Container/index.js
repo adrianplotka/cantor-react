@@ -6,5 +6,4 @@ const Container = ({ children }) => (
     </main>
 );
 
-
 export default Container;

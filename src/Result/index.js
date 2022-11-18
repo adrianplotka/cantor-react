@@ -6,6 +6,6 @@ const Result = ({ result, amoundExchange}) => (
                             {result}
                         </strong>
                 </div>
-)
+);
 
 export default Result; 

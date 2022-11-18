@@ -16,11 +16,11 @@
 }
 
 .form__button:hover {
-    background-color: hsl(208, 100%, 92%);
+    background-color: hsl(45, 35%, 95%);
 }
 
 .form__button:active {
-    background-color: hsl(208, 100%, 87%);
+    background-color: hsl(45, 35%, 100%);
 }
 
 @media(max-width:767px) {
