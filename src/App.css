@@ -13,4 +13,5 @@ body {
   justify-content: center;
   background:url("./background.jpg");
   background-position: center center;
+  font-family: 'Montserrat', sans-serif;
 }
