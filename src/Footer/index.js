@@ -1,10 +1,10 @@
 import "./style.css";
 
 const Footer = () => (
-    <div className="footer">
+    <footer className="footer">
         <p>© Wszystkie prawa zastrzeżone</p>
         <p>Żukowo, 15 październik 2022r.</p>
-    </div>
-)
+    </footer>
+);
 
 export default Footer;
