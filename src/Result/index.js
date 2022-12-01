@@ -1,11 +1,11 @@
-import "./style.css";
+import { StyledResult } from "./styled";
 
-const Result = ({ result, amoundExchange}) => (
-    <div className="result">
-                        <strong>
-                            {result}
-                        </strong>
-                </div>
+const Result = ({ result }) => (
+    <StyledResult>
+        <strong>
+            {result}
+        </strong>
+    </StyledResult>
 );
 
 export default Result; 

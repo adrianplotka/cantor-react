@@ -1,4 +1,4 @@
-import "./style.css";
+import { StyledClock } from "./styled";
 import { useCurrentDate } from "./useCurrentDate"
 
 const Clock = () => {
@@ -17,9 +17,9 @@ const Clock = () => {
     });
 
     return (
-            <div className="clock">
+            <StyledClock>
                 Dzisiaj jest {FormatDate(date)}, {FormatTime(date)}
-            </div>
+            </StyledClock>
     )
 };
 

@@ -1,10 +1,10 @@
-import "./style.css";
+import { StyledFooter } from "./styled";
 
 const Footer = () => (
-    <footer className="footer">
+    <StyledFooter>
         <p>© Wszystkie prawa zastrzeżone</p>
         <p>Żukowo, 15 październik 2022r.</p>
-    </footer>
+    </StyledFooter>
 );
 
 export default Footer;

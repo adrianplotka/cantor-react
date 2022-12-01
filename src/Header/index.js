@@ -1,4 +1,3 @@
-import "./style.css";
 import Clock from "./Clock";
 
 const Header = ({ title }) => (

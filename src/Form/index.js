@@ -1,6 +1,6 @@
-import "./style.css";
 import { useState } from "react";
 import { currencies } from "../currencies/currencies";
+import { StyledForm, StyledButton } from "./styled";
 
 const Form = ({ calculateResult, setResult }) => {
     const [amountExchange, setamountExchange] = useState("");
@@ -18,13 +18,13 @@ const Form = ({ calculateResult, setResult }) => {
     };
 
     return (
-        <form className="form"
+        <StyledForm
             onSubmit={onFormSubmit}
             onReset={onFormReset}
         >
-            <label className="form__label">
+            <label>
                 <p>Wybierz jaką walutę chciałbyś otrzymać:</p>
-                <select className="form__field"
+                <select
                     name="currencyConverted"
                     value={currency}
                     onChange={({ target }) => setCurrency(target.value)}
@@ -39,10 +39,9 @@ const Form = ({ calculateResult, setResult }) => {
                     ))};
                 </select>
             </label>
-            <label className="form__field ">
+            <label>
                 <p>Kwota do przeliczenia</p>
                 <input
-                    className="form__amount"
                     placeholder="Ile masz zł?"
                     type="number"
                     required min="0.01"
@@ -51,11 +50,11 @@ const Form = ({ calculateResult, setResult }) => {
                     onChange={({ target }) => setamountExchange(target.value)}
                 />
             </label>
-            <div className="form__buttons">
-                <button className="form__button">Przelicz</button>
-                <button className="form__button" type="reset" >Resetuj</button>
+            <div>
+                <StyledButton>Przelicz</StyledButton>
+                <StyledButton type="reset" >Resetuj</StyledButton>
             </div>
-        </form>
+        </StyledForm>
     );
 };
 
