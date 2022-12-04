@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { currencies } from "../currencies/currencies";
 import { StyledForm, StyledButton } from "./styled";
 
@@ -15,6 +15,12 @@ const Form = ({ calculateResult, setResult }) => {
         setamountExchange("");
         setCurrency("EUR");
         setResult("");
+    };
+
+    const inputRef = useRef(null);
+
+    const focusInput = () => {
+        inputRef.current.focus();
     };
 
     return (
@@ -42,6 +48,7 @@ const Form = ({ calculateResult, setResult }) => {
             <label>
                 <p>Kwota do przeliczenia</p>
                 <input
+                    ref={inputRef}
                     placeholder="Ile masz zł?"
                     type="number"
                     required min="0.01"
@@ -51,8 +58,15 @@ const Form = ({ calculateResult, setResult }) => {
                 />
             </label>
             <div>
-                <StyledButton>Przelicz</StyledButton>
-                <StyledButton type="reset" >Resetuj</StyledButton>
+                <StyledButton onClick={focusInput}>
+                    Przelicz
+                    </StyledButton>
+                <StyledButton 
+                type="reset" 
+                onClick={focusInput}
+                >
+                Resetuj
+                </StyledButton>
             </div>
         </StyledForm>
     );
