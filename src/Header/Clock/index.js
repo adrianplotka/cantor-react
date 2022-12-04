@@ -1,24 +1,12 @@
 import { StyledClock } from "./styled";
-import { useCurrentDate } from "./useCurrentDate"
+import { useCurrentDate, formatDate, formatTime } from "./useCurrentDate"
 
-const Clock = () => {
+ export const Clock = () => {
     const date = useCurrentDate();
-
-    const FormatDate = (date) => date.toLocaleDateString("pl", {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-    });
-
-    const FormatTime = (date) => date.toLocaleTimeString("pl", {
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-    });
 
     return (
             <StyledClock>
-                Dzisiaj jest {FormatDate(date)}, {FormatTime(date)}
+                Dzisiaj jest {formatDate(date)}, {formatTime(date)}
             </StyledClock>
     )
 };
