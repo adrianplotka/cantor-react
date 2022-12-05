@@ -1,11 +1,11 @@
 import Result from './Result';
-import Container from './Container';
 import Footer from './Footer';
 import Header from './Header';
 import Form from './Form';
 import Information from './Information';
 import { useState } from "react";
 import { currencies } from "./currencies/currencies";
+import { StyledContainer } from "./StyledContainer" 
 
 function App() {
   const [result, setResult] = useState(null);
@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <Container>
+    <StyledContainer>
       <Header title="Lista zadań" />
       <Form
         calculateResult={calculateResult}
@@ -29,7 +29,7 @@ function App() {
       />
       <Information />
       <Footer />
-    </Container>
+    </StyledContainer>
   );
 };
 

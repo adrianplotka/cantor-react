@@ -60,12 +60,12 @@ const Form = ({ calculateResult, setResult }) => {
             <div>
                 <StyledButton onClick={focusInput}>
                     Przelicz
-                    </StyledButton>
-                <StyledButton 
-                type="reset" 
-                onClick={focusInput}
+                </StyledButton>
+                <StyledButton
+                    type="reset"
+                    onClick={focusInput}
                 >
-                Resetuj
+                    Resetuj
                 </StyledButton>
             </div>
         </StyledForm>
