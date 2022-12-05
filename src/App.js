@@ -1,4 +1,3 @@
-import './App.css';
 import Result from './Result';
 import Container from './Container';
 import Footer from './Footer';
