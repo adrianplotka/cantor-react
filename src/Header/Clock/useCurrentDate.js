@@ -13,15 +13,3 @@ export const useCurrentDate = () => {
 
     return currentDate;
 };
-
-export const formatDate = (date) => date.toLocaleDateString("pl", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-});
-
-export const formatTime = (date) => date.toLocaleTimeString("pl", {
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric",
-});
