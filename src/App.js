@@ -4,17 +4,20 @@ import Header from './Header';
 import Form from './Form';
 import Information from './Information';
 import { useState } from "react";
-import { currencies } from "./currencies/currencies";
-import { StyledContainer } from "./StyledContainer" 
+import { StyledContainer } from "./StyledContainer";
+import { useCurrencies } from "./useCurrencies";
 
 function App() {
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState({});
+  const ratesData = useCurrencies();
 
   const calculateResult = (amountExchange, currency) => {
-    const rateExchange = currencies.find(({ short }) => short === currency).rate;
-    const currencyFinal = currencies.find(({ short }) => short === currency).short;
+    const rateExchange = ratesData.rates[currency];
 
-    setResult((+amountExchange / rateExchange).toFixed(2) + currencyFinal)
+    setResult({
+      resultFinal: (+amountExchange * rateExchange).toFixed(2),
+      currency,
+    });
   };
 
   return (
@@ -22,10 +25,13 @@ function App() {
       <Header title="Lista zadań" />
       <Form
         calculateResult={calculateResult}
+        ratesData={ratesData}
         setResult={setResult}
       />
       <Result
+        title="Otrzymasz:"
         result={result}
+        ratesData={ratesData}
       />
       <Information />
       <Footer />
