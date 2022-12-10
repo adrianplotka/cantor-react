@@ -2,7 +2,6 @@ import Result from './Result';
 import Footer from './Footer';
 import Header from './Header';
 import Form from './Form';
-import Information from './Information';
 import { useState } from "react";
 import { StyledContainer } from "./StyledContainer";
 import { useCurrencies } from "./useCurrencies";
@@ -33,7 +32,6 @@ function App() {
         result={result}
         ratesData={ratesData}
       />
-      <Information />
       <Footer />
     </StyledContainer>
   );
