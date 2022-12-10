@@ -3,8 +3,6 @@ import axios from "axios"
 
 export const useCurrencies = () => {
    const [ratesData, setRatesData] = useState({
-      date: null,
-      rates: null,
       status: "loading",
    });
 

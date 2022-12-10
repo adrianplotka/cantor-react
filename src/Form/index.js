@@ -21,7 +21,7 @@ const Form = ({ calculateResult, ratesData, result }) => {
       >
          {status === "loading" ? (
             <p>
-               Trwa ładowanie danych... Prosimy o chwileczkę cierpliwości
+               Trwa ładowanie danych... Prosimy o chwileczkę cierpliwości :)
             </p>
          ) : status === "error" ? (
             <StyledError error>
@@ -39,7 +39,9 @@ const Form = ({ calculateResult, ratesData, result }) => {
                      onChange={({ target }) => setCurrency(target.value)}
                   >
                      {Object.keys(rates).map((rates) => (
-                        <option key={rates} value={rates}>
+                        <option
+                           key={rates}
+                           value={rates}>
                            {rates}
                         </option>
                      ))};
