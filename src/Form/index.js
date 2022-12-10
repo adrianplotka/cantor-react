@@ -21,7 +21,7 @@ const Form = ({ calculateResult, ratesData, result }) => {
       >
          {status === "loading" ? (
             <p>
-               Trwa ładowanie danych... Prosimy o chwileczkę cierpliwości :)
+               Trwa ładowanie danych... Prosimy o chwileczkę cierpliwości 😊
             </p>
          ) : status === "error" ? (
             <StyledError error>
