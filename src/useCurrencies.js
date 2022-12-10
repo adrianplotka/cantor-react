@@ -13,7 +13,7 @@ export const useCurrencies = () => {
          try {
             const response = await axios.get("https://api.exchangerate.host/latest?base=PLN");
             setRatesData({
-               data: response.data.date,
+               date: response.data.date,
                rates: response.data.rates,
                status: "success",
             });

@@ -29,3 +29,9 @@ export const StyledButton = styled.button`
     }
 
 `;
+
+export const StyledResult = styled.div`
+    max-width: 200px;
+    margin: auto;
+    margin-top: 20px;
+`;

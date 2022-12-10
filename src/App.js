@@ -1,4 +1,3 @@
-import Result from './Result';
 import Footer from './Footer';
 import Header from './Header';
 import Form from './Form';
@@ -26,11 +25,7 @@ function App() {
         calculateResult={calculateResult}
         ratesData={ratesData}
         setResult={setResult}
-      />
-      <Result
-        title="Otrzymasz:"
         result={result}
-        ratesData={ratesData}
       />
       <Footer />
     </StyledContainer>
