@@ -14,6 +14,7 @@ export const StyledForm = styled.form`
 `;
 
 export const StyledButton = styled.button`
+    width: 60%;
     margin: 20px 5px 0px 0px ;
     background-color: ${({ theme }) => theme.color.aliceBlue};
     border: none;
@@ -33,5 +34,6 @@ export const StyledButton = styled.button`
 export const StyledResult = styled.div`
     max-width: 200px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 `;

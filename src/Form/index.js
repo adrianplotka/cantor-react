@@ -61,16 +61,12 @@ const Form = ({ calculateResult, ratesData, result }) => {
                   <StyledButton>
                      Przelicz
                   </StyledButton>
-                  <StyledButton
-                     type="reset"
-                  >
-                     Resetuj
-                  </StyledButton>
                </div>
                <StyledResult>
-                  <strong>{result.resultFinal}&nbsp;{result.currency} </strong>
+                  Za kwotę <strong>{result.amountExchange} PLN</strong> otrzymasz
+                  <strong> {result.resultFinal}&nbsp;{result.currency} </strong>
                </StyledResult>
-               KUrsy walut pobierane są z Europejskiego Centralnego Banku
+               Kursy walut pobierane są z Europejskiego Centralnego Banku
                <br /> na dzień <strong>{date}</strong>
             </>
          )}

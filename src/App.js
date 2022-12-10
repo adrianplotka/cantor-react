@@ -15,6 +15,7 @@ function App() {
     setResult({
       resultFinal: (+amountExchange * rateExchange).toFixed(2),
       currency,
+      amountExchange,
     });
   };
 
