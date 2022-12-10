@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { StyledForm, StyledButton, StyledResult } from "./styled";
+import { StyledForm, StyledButton, StyledResult, StyledError } from "./styled";
 
 const Form = ({ calculateResult, ratesData, result }) => {
    const [amountExchange, setamountExchange] = useState("");
@@ -20,14 +20,14 @@ const Form = ({ calculateResult, ratesData, result }) => {
          onSubmit={onFormSubmit}
       >
          {status === "loading" ? (
-            <label>
+            <p>
                Trwa ładowanie danych... Prosimy o chwileczkę cierpliwości
-            </label>
+            </p>
          ) : status === "error" ? (
-            <label error>
+            <StyledError error>
                Przepraszamy coś poszło nie tak. Sprawdź czy masz połącznie z
                internetem. Jeśli tak to widocznie nasz błąd. Spróbuj później.
-            </label>
+            </StyledError>
          ) : (
             <>
 

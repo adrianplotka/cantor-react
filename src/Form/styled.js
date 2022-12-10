@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const StyledError = styled.p`
+    color: ${({ theme }) => theme.color.red};
+`
+
 export const StyledForm = styled.form`
     background-color: ${({ theme }) => theme.color.akaroa};
     border-radius: 20px;
