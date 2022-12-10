@@ -1,13 +1,39 @@
 # It is a website that has a currency calculator
 
-This page has a simple task organizer. Here you can add the task you want to add and then mark that we have done it. It also allows you to remove a task that is not interesting for you
+This project is the result of studying at Frontend Developer at YouCode online school.
+
+This page will help you convert money from different currencies. Youcan choose:
+
+Almost all world currencies. Among others: 
+
+- Euro
+- Dolars
+- British Pound 
+- and mamy many others
+
+Currency rates are downloaded from Europen Central Bank and updated every day.
 
 ### Demo
-[Project](https://adrianplotka.github.io/cantor-react/)
+[Project webside - click to redirect](https://adrianplotka.github.io/cantor-react/)
 
-<img src=public/readme.png alt= "Layout" max-width="300px">
+## Preview
+![Demo](./readme.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Languages 
+
+- HTML
+- CSS
+- BEM
+- Flex, Grid
+- Responsive Web Design 
+- Styled Components 
+- JavaScript
+- ES6+ features 
+- React.js
+- React Hooks: useState, useEffect, UseRef, own React Hooks
+- Work with API
 
 ## Available Scripts
 
