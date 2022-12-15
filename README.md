@@ -33,6 +33,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - ES6+ features 
 - React.js
 - React Hooks: useState, useEffect, UseRef, own React Hooks
+- Redux
 - Work with API
 
 ## Available Scripts
