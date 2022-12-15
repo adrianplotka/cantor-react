@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { StyledForm, StyledButton, StyledResult, StyledError } from "./styled";
+import { StyledForm, StyledButton, StyledResult, StyledError, StyledSelect, StyledImg, StyledInput, StyledLoading  } from "./styled";
 
 const Form = ({ calculateResult, ratesData, result }) => {
    const [amountExchange, setamountExchange] = useState("");
@@ -20,9 +20,11 @@ const Form = ({ calculateResult, ratesData, result }) => {
          onSubmit={onFormSubmit}
       >
          {status === "loading" ? (
-            <p>
-               Trwa ładowanie danych... Prosimy o chwileczkę cierpliwości 😊
-            </p>
+            <StyledLoading>
+               <p>Trwa ładowanie danych... Prosimy o chwileczkę cierpliwości 😊</p>
+               <p>Pobieramy dla ciebie dane z Europejskiego Centralnego Banku</p>
+               <StyledImg src = "https://acegif.com/wp-content/uploads/loading-11.gif"/>
+            </StyledLoading>
          ) : status === "error" ? (
             <StyledError error>
                Przepraszamy coś poszło nie tak. Sprawdź czy masz połącznie z
@@ -30,10 +32,9 @@ const Form = ({ calculateResult, ratesData, result }) => {
             </StyledError>
          ) : (
             <>
-
                <label>
                   <p>Wybierz jaką walutę chciałbyś otrzymać:</p>
-                  <select
+                  <StyledSelect
                      name="currencyConverted"
                      value={currency}
                      onChange={({ target }) => setCurrency(target.value)}
@@ -45,11 +46,11 @@ const Form = ({ calculateResult, ratesData, result }) => {
                            {rates}
                         </option>
                      ))};
-                  </select>
+                  </StyledSelect>
                </label>
                <label>
                   <p>Kwota do przeliczenia</p>
-                  <input
+                  <StyledInput
                      ref={inputRef}
                      placeholder="Ile masz zł?"
                      type="number"
